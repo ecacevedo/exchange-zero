@@ -1,14 +1,14 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :update, :destroy]
 
-  # def add_item_category
-  #   @item = Item.find(params[:item_id])
-  #   @category = Category.find(params[:id])
+  def add_item_category
+    @item = Item.find(params[:item_id])
+    @category = Category.find(params[:id])
 
-  #   @category.items << @item
+    @category.items << @item
 
-  #   render json: @item, include: :categories
-  # end
+    render json: @item, include: :categories
+  end
 
 
   # GET /categories

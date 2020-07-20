@@ -7,7 +7,7 @@ import { addCategories } from './services/categories'
 export default class CategoryUpdate extends Component {
   state = {
     state_item: null,
-    CatergoryId: null
+    categoryId: null
  }
 
  componentDidMount() {
