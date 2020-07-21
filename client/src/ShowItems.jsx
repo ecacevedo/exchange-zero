@@ -5,27 +5,36 @@ import { item } from './services/items';
 
 export default function ShowItems(props) {
   return (
-
-    <div>
+    <>
+      <div className="create-item">
+        <Link to="/items/new"><button>Click here to Add new Item!</button></Link>
+        </div>
+    <div className= "basic-item-map" >
       
       {props.items.map(items => (
         <React.Fragment key={items.id}>{
           items.user_id == props.currentUser.id &&
-        <>
-          <p>{items.item_name} </p>
-          <p>{items.locationdetails}</p>
-          <img className="items-Image" src={items.image_url} />
-          <Link to={`/items/${items.id}/edit`}><button>Edit</button></Link>
+        <div className= "individual-item">
+          <p>{items.item_name} - {items.locationdetails} </p>
+            <img className="items-Image" src={items.image_url} />
+            <div>
+            <Link to={`/items/${items.id}/edit`}>
+              <button className="Button">Edit</button>
+            </Link>
 
-          <button onClick={() => props.handleItemDelete(items.id)}
+          <button className="Button" onClick={() => props.handleItemDelete(items.id)}
             >Delete</button>
-            </>
+          </div>
+          </div>
         }
           
         </React.Fragment>
       ))}
       <br></br>
-      <Link to="/items/new"><button>Create Item</button></Link>
-    </div>
+      
+      </div>
+      
+      
+      </>
   )
 }

@@ -141,11 +141,15 @@ export default class App extends Component {
         <br/>
         <Route path='/items/new' render={(props) => (
           
+        
           <CreateItem
             {...props}
             handleItemCreate={this.handleItemCreate}
 
+      
           />
+
+           
           
         )}/>
         <Route path='/items/:id/edit' render={(props) => {

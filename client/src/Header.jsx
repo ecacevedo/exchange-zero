@@ -12,7 +12,8 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <Link to ="/"><h1>Exchange Zero</h1></Link>
+        <Link to="/"><h1>Exchange Zero</h1></Link>
+        <Link to="/categories">Categories</Link>
         <Link to="/"><button
           onClick={() => {
             this.props.handleLogout();

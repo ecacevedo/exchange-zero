@@ -3,18 +3,40 @@
   text-align: center;
   height: 500px;
   color: gray;
+  text-decoration: none;
  
   
 }
 
 .items-Image{
-  height: 200px;
+  width: 350px;
 }
 
 .footer {
   display: flex;
   justify-content: center;
 }
+
+.basic-item-map{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.individual-item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.create-item{
+  display: flex;
+  justify-content: center;
+}
+
 
 @media (max-width: 768px) {
   .items-Image {
