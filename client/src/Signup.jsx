@@ -18,13 +18,16 @@ export default class Signup extends Component {
   render() {
     const {username, password} = this.state
     return (
-      <form onSubmit={(e) => {
+      <form
+      className="login"
+        onSubmit={(e) => {
         e.preventDefault();
         this.props.handleSignup(this.state);
         this.props.history.push('/')
       }}>
         
         <input
+          
           type="text"
           name="username"
           placeholder="Username"

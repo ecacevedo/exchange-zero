@@ -22,12 +22,18 @@
   font-family: 'Merriweather', serif;
   text-decoration: none;
   size: 100px;
-  color: #F54A83;
+  color: rgb(245, 188, 207);
 }
 
 .header-link:hover{
   font-family: 'Merriweather', serif;
   color: #6B9AB0;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  
 }
 
 
@@ -73,9 +79,21 @@
 .show-categories {
   display: flex;
   justify-content: space-evenly;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.category-link {
+  text-decoration: none;
+  color: black
+
+}
+.category-link:hover {
+  text-decoration: none;
+  color: rgb(241, 43, 109);
+
 }
 
 button{

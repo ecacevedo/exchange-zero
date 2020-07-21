@@ -7,8 +7,8 @@ export default function ShowCategories(props) {
       <h2 className="categories-title">Categories</h2>
       <div className="show-categories">
       {props.categories.map(category => (
-        <Link to={`/categories/${category.id}`}>
-          <p className="header-link">{category.category_name}</p> </Link>
+        <Link className="category-link" to={`/categories/${category.id}`}>
+          <p>{category.category_name}</p> </Link>
         
       ))}
         </div>
