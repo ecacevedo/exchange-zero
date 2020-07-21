@@ -12,8 +12,8 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <Link to="/"><h1>Exchange Zero</h1></Link>
-        <Link to="/categories">Categories</Link>
+        <Link to="/" className="header-link"><h1>Exchange Zero</h1></Link>
+        <Link to="/categories" className="header-link"><h3 >Categories</h3></Link>
         <Link to="/"><button
           onClick={() => {
             this.props.handleLogout();
@@ -32,7 +32,7 @@ export default class Header extends Component {
           
               />
             )} />
-              <Link to="/signup">Sign up</Link>
+              <Link to="/signup" className="header-link"><h3>Sign up</h3></Link>
              
             <Route path='/signup' render={(props) => (
               <Signup

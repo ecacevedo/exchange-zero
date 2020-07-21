@@ -1,53 +1,107 @@
-.header{
-  background-image: url("https://images.unsplash.com/photo-1558299244-f4bb4dd735b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80");
-  text-align: center;
-  height: 500px;
-  color: gray;
-  text-decoration: none;
- 
+#root{
+  background-color: rgb(248, 245, 239);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald:wght@200&display=swap');
+
+
+.header {
+  background-image: url("https://images.unsplash.com/photo-1525124480298-565f20ea00ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+  
+  height: 300px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
   
 }
 
-.items-Image{
-  width: 350px;
+.header-link {
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  size: 100px;
+  color: #F54A83;
+}
+
+.header-link:hover{
+  font-family: 'Merriweather', serif;
+  color: #6B9AB0;
+}
+
+
+
+.items-Image {
+  max-height: 500px;
+  max-width: 500px;
 }
 
 .footer {
   display: flex;
   justify-content: center;
+  font-family: 'Oswald', sans-serif;
 }
 
-.basic-item-map{
+.basic-item-map {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-
+  font-family: 'Oswald', sans-serif;
 }
 
-.individual-item{
+.individual-item {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 
-.create-item{
+.create-item {
   display: flex;
   justify-content: center;
+  font-family: 'Oswald', sans-serif;
 }
+
+.categories-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.show-categories {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Oswald', sans-serif;
+}
+
+button{
+  font-family: 'Oswald', sans-serif;
+  background-color: #92A685;
+}
+
+input{
+  font-family: 'Oswald', sans-serif;
+  background-color: #92A685;
+}
+
+
+
 
 
 @media (max-width: 768px) {
   .items-Image {
-    max-width: 300px;
-    max-height: 600px;
+    max-height: 400px;
+    max-width: 400px;
   }
 }
 
 @media (max-width: 500px) {
-  .items-Image{
+  .items-Image {
+    max-height: 300px;
     max-width: 300px;
-    max-height: 500px;
   }
 }

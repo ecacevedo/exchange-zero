@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom'
 
 export default function ShowCategories(props) {
   return (
-    <div>
-      <h2>Categories</h2>
+    <>
+      <h2 className="categories-title">Categories</h2>
+      <div className="show-categories">
       {props.categories.map(category => (
         <Link to={`/categories/${category.id}`}>
-          <p>{category.category_name}</p> </Link>
+          <p className="header-link">{category.category_name}</p> </Link>
+        
       ))}
-    </div>
+        </div>
+    </>
   )
 }

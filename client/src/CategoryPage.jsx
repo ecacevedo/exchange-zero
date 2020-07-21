@@ -18,11 +18,11 @@ export default class CategoryPage extends Component {
       <> {this.state.oneCategory &&
         <div>
         {this.state.oneCategory.items.map(item =>
-            <>
-            <p>{item.item_name}</p>
-            <p>{item.locationdetails}</p>
+            <div className="individual-item">
+            <p>{item.item_name} - {item.locationdetails}</p>
+            
             <img className ="items-Image"src={item.image_url}/>
-            </>
+            </div>
           )}
         </div>
       }
