@@ -1,32 +1,38 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class CategoryPage extends Component {
   state = {
-    oneCategory: null
-  }
+    oneCategory: null,
+  };
 
   componentDidMount = () => {
-    const oneCategory = this.props.categories.find(category => category.id === parseInt(this.props.match.params.id))
-    this.setState({ oneCategory })
-  }
+    const oneCategory = this.props.categories.find(
+      (category) =>
+      category.id === parseInt(this.props.match.params.id)
+    );
+    this.setState({ oneCategory });
+  };
 
-
-  
   render() {
-    
     return (
-      <> {this.state.oneCategory &&
-        <div>
-        {this.state.oneCategory.items.map(item =>
-            <div className="individual-item">
-            <p>{item.item_name} - {item.locationdetails}</p>
-            
-            <img className ="items-Image"src={item.image_url}/>
-            </div>
-          )}
-        </div>
-      }
-        </>
-    )
+      <>
+        {" "}
+        {this.state.oneCategory && (
+          <div>
+            {this.state.oneCategory.items.map((item) => (
+              <div
+                className="individual-item">
+                <p>
+                  {item.item_name} - {item.locationdetails}
+                </p>
+                <img c
+                  lassName="items-Image"
+                  src={item.image_url} />
+              </div>
+            ))}
+          </div>
+        )}
+      </>
+    );
   }
 }
