@@ -55,11 +55,11 @@ Exchange Zero is a full stack app which for users to trade and give away unwante
 - [x] Implement 2 media queries for responsive design on 3 screen sizes (including desktop).
 
 ###### Linting
-- [ ] Indent properly.
-- [ ] tilize high-quality, semantic variable names.
-- [ ] Follow camelCase, snake_case, and kebab-case convention.
-- [ ] Remove unnecessary boilerplate React files and code.
-- [ ] Remove all console.log()s and commented out code (functional notes and comments are okay).
+- [x] Indent properly.
+- [x] tilize high-quality, semantic variable names.
+- [x] Follow camelCase, snake_case, and kebab-case convention.
+- [x] Remove unnecessary boilerplate React files and code.
+- [x] Remove all console.log()s and commented out code (functional notes and comments are okay).
 
 ###### Deployment
 - [x] Deploy the fully functional front-end via Surge or Netlify.
@@ -68,7 +68,7 @@ Exchange Zero is a full stack app which for users to trade and give away unwante
 ###### Procedural
 - [x] Initialize a git repo on Github, with a link to your hosted project.
 - [x] Have frequent commits, making a robust commit history at least every day. (75 commits minimum)
-- [ x] Use effective and safe branching and merging processes.
+- [x] Use effective and safe branching and merging processes.
 
 <br>
 
@@ -186,13 +186,13 @@ https://app.diagrams.net/#G14Wgm3RFggvZ-wyzG8_NlKqJCmuboDPTb
 
 - [ ] User can click Item in Marketplace and go to seperate page
 - [ ] Allow messaging between users
-- [ ] Implement Authorization
+- [x] Implement Authorization
 - [ ] Use Material UI
 - [ ] Allow users to create more advanced profile
 - [ ] Add blogging
 - [ ] Add Resources for zero waste ideas
 - [ ] Dark Mode
-- [ ] Add Categories to ERD
+- [x] Add Categories to ERD
 
 
 
